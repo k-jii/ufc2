@@ -1,0 +1,172 @@
+body {
+  font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 16px; /* 基本のフォントサイズ */
+  line-height: 1.6; /* 行間を広めに設定 */
+  color: #333; /* 文字色をやや濃いグレーに設定 */
+  background-color: black; /* 背景色を薄いグレーに設定 */
+  margin: 0; /* デフォルトのマージンをリセット */
+  padding: 0; /* デフォルトのパディングをリセット */
+  overflow-x: hidden;
+}
+
+span {
+  background: red;
+  padding: 16px;
+  font-size: 37px;
+}
+
+h1 {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.contents {
+  margin-top: 40px;
+}
+
+li {
+  list-style: none;
+  font-size: 34px;
+  padding-bottom: 8px;
+  color: white;
+}
+
+ul {
+  width: 100%; /* 幅を100%に設定 */
+  max-width: 400px; /* 最大幅を設定 */
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+  margin: 0;
+  padding: 0;
+  margin: 0 auto;
+  width: 140px;
+  height: 100px;
+}
+
+h2 {
+  text-align: center;
+  padding-left: 40px;
+  display: none;
+}
+
+
+
+p {
+  font-family: 'Open Sans', Arial, sans-serif; /* 読みやすいフォントファミリー */
+  font-size: 16px; /* 基本のフォントサイズ */
+  line-height: 1.6; /* 行間を広めに設定 */
+  letter-spacing: 0.5px; /* 文字間を少し広げる */
+  color: #333; /* 文字色をやや濃いグレーに設定 */
+  margin: 0 0 1.5em; /* 下に適度なマージンを設定 */
+  padding: 0; /* パディングをリセット */
+  padding-left: 70px;
+  display: none;
+}
+
+.fighter {
+  
+}
+
+.fighters {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.small {
+  font-size: 22.5px;
+}
+
+.small2 {
+  font-size: 21px;
+}
+
+.small3 {
+  font-size: 20px;
+}
+
+.blink {
+  animation: blink 1s infinite;
+  color: red;
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+
+@media screen and (max-width: 1200px) {
+  /* 1200px以下で表示させたいcssを記述していく */
+body {
+  overflow-x: hidden;
+  margin: 0;
+}
+
+  .fighter {
+    width: 50%;
+    overflow-x: hidden;
+    padding-left: 0; 
+    margin-left: 0;
+  }
+
+  .fighters {
+    display: flex;none
+    flex-wrap: wrap;none
+    overflow-x: hidden;
+  }
+
+  h2 {
+    padding-right: 40px;
+  }
+  
+  
+}
+
+@media screen and (max-width: 520px) {
+  /* 520px以下で表示させたいcssを記述していく */
+body {
+  overflow-x: hidden;
+  margin: 0;
+}
+
+  .fighter {
+width: 25%;
+    overflow-x: hidden;
+    padding-left: 0; 
+    margin-left: 0;
+  }
+
+  .fighters {
+    overflow-x: hidden;
+  }
+
+  p {
+    padding-left: 10px;
+  }
+
+  h2 {
+    padding-right: 40px;
+  }
+
+  li {
+    font-size: 30px;
+    overflow-x: hidden;
+  }
+
+  ul {
+    width: 320px;
+    overflow-x: hidden;
+  }
+}
+
