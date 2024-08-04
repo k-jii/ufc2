@@ -85,7 +85,7 @@ p {
   color: #333; /* 文字色をやや濃いグレーに設定 */
   margin: 0 0 1.5em; /* 下に適度なマージンを設定 */
   padding: 0; /* パディングをリセット */
-  padding-left: 70px;
+  padding-left: 125px;
   display: none;
 }
 
