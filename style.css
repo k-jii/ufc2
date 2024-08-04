@@ -46,7 +46,7 @@ img {
   display: block;
   margin: 0;
   width: 280px;
-  border: 5px solid white;
+  border: 6px solid white;
   
 }
 
@@ -141,7 +141,7 @@ body {
 }
 
   .fighter {
-    width: 50%;
+    width: 25%;
     overflow-x: hidden;
     padding-left: 0; 
     margin-left: 0;
@@ -151,6 +151,16 @@ body {
     display: flex;none
     flex-wrap: wrap;none
     overflow-x: hidden;
+  }
+
+  img {
+    display: block;
+    margin: 0;
+    padding: 0;
+    margin: 0 auto;
+    width: 183px;
+    height: 120px;
+
   }
 
   h2 {
@@ -193,8 +203,8 @@ img {
   margin: 0 auto;
   width: 97px;
   height: 60px;
-  width: 130px;
-  height: 90px;
+  width: 110px;
+  height: 70px;
 }
 
 
