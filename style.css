@@ -64,6 +64,7 @@ h3 {
 .syousai {
   width: 700px;
   margin: 0 auto;
+  margin-top: 40px;
 }
 
 
@@ -186,7 +187,7 @@ img {
   margin: 0;
   padding: 0;
   margin: 0 auto;
-  width: 116px;
+  width: 115px;
   height: 75px;
 }
 
@@ -202,8 +203,9 @@ img {
   }
 
   .syousai {
-    width: 400px;
+    width: 380px;
     margin: 0 auto;
+    overflow-x: hidden;
   }
 
   .gazou {
@@ -211,6 +213,7 @@ img {
     padding-top: 60px;
     width: 400px;
     height: 250px;
+    overflow-x: hidden;
  
   }
 }
