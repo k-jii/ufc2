@@ -46,6 +46,7 @@ img {
   display: block;
   margin: 0;
   width: 280px;
+  border: 5px solid white;
   
 }
 
@@ -96,7 +97,7 @@ p {
 }
 
 .fighter {
-  width: 16.6%;
+  width: 20%;
   
 }
 
