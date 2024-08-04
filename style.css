@@ -169,6 +169,7 @@ body {
 
   .fighter {
     width: 25%;
+    width: 33%;
     overflow-x: hidden;
     padding-left: 0; 
     margin-left: 0;
@@ -192,6 +193,8 @@ img {
   margin: 0 auto;
   width: 97px;
   height: 60px;
+  width: 130px;
+  height: 90px;
 }
 
 
