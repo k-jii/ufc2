@@ -121,17 +121,23 @@ p {
   font-size: 20px;
 }
 
-.blink {
-  animation: blink 1s infinite;
-  color: red;
-  font-size: 20px;
-  margin-left: 10px;
-}
 
 @keyframes blink {
-  0% { opacity: 1; }
-  50% { opacity: 0; }
-  100% { opacity: 1; }
+  0% {
+      border-color: transparent;
+  }
+  50% {
+      border-color: red;
+  }
+  100% {
+      border-color: transparent;
+  }
+}
+
+.blinking-border {
+  border: 3px solid transparent; /* ボーダーの初期状態を透明に設定 */
+  animation: blink 0.5s infinite; /* アニメーションを適用 */
+ 
 }
 
 
