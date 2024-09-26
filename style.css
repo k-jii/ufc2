@@ -105,6 +105,7 @@ p {
 .bun {
   color: white;
   display: block;
+  padding-top: 30px;
   
 }
 
@@ -130,7 +131,37 @@ p {
   font-size: 20px;
 }
 
- 
+table {
+  width: 80%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+/* 左側の勝利セルを緑に */
+th.win {
+  background-color: #4CAF50; /* 緑 */
+  color: white;
+}
+
+/* 左側の敗北セルを赤に */
+th.lose {
+  background-color: #f44336; /* 赤 */
+  color: white;
+}
+
+tr:nth-child(even) td {
+  background-color: #f2f2f2;
+}
+
+
 
 
 @media screen and (max-width: 1200px) {
@@ -181,6 +212,22 @@ body {
 
 @media screen and (max-width: 520px) {
   /* 520px以下で表示させたいcssを記述していく */
+
+
+table {
+  width: 100%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+  font-size: 10px;
+}
 
   .fighter {
     width: 33%;
