@@ -81,10 +81,12 @@ h4 {
 
 .gazou {
   display: block;
-  padding-top: 50px;
+  padding-top: 30px;
   width: 600px;
   margin: 0 auto ;
-  border: none;
+  
+  border: 5px solid #f4e9e9; /* 枠線の太さと色を指定 */
+  border-radius: 10px; /* 角を丸める (必要に応じて) */
 }
 
 
@@ -98,7 +100,7 @@ p {
   color: #333; /* 文字色をやや濃いグレーに設定 */
   margin: 0 0 1.5em; /* 下に適度なマージンを設定 */
   padding: 0; /* パディングをリセット */
-  padding-left: 125px;
+  margin: 0 auto;
   display: none;
 }
 
@@ -132,7 +134,7 @@ p {
 }
 
 table {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   border-collapse: collapse;
   background-color: #fff;
@@ -226,7 +228,7 @@ th, td {
   padding: 10px;
   text-align: center;
   border: 1px solid #ddd;
-  font-size: 10px;
+  font-size: 8px;
 }
 
   .fighter {
@@ -268,17 +270,18 @@ img {
   }
 
   .syousai {
+    padding-top: 30px;
     width: 380px;
     margin: 0 auto;
     overflow-x: hidden;
   }
 
   .gazou {
-  box-sizing: content-box;
-    padding-top: 100px;
-    width: 400px;
-    height: 250px;
+    padding-top: 50px;
+    width: 360px;
+    height: 230px;
     overflow-x: hidden;
+    
  
   }
 }
