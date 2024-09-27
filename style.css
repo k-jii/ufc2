@@ -186,6 +186,25 @@ tr:nth-child(even) {
   background-color: #f98fab;
 }
 
+/* 来歴の表のスタイル */
+.history {
+  margin-top: 20px;
+  border: 1px solid #ddd;
+}
+
+.history td {
+  background-color: #fdfdfd;
+  padding: 10px;
+}
+
+/* 来歴タイトルのスタイル */
+.history th {
+  background-color: #e8f0fe; /* 明るい青色 */
+  text-align: center;
+  font-size: 1.2em; /* フォントサイズを大きく */
+  padding: 10px;
+}
+
 
 
 @media screen and (max-width: 1200px) {
