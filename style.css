@@ -139,6 +139,15 @@ th:first-child, td:first-child {
   width: 22%; /* 30%に設定（必要に応じて調整） */
 }
 
+/* 1列目の文字を中央に */
+.koumoku {
+  text-align: center;
+}
+
+.syo {
+  text-align: center;
+}
+
 table {
   width: 100%;
   border-collapse: collapse;
@@ -239,7 +248,7 @@ table {
 
 th, td {
   padding: 10px;
-  text-align: center;
+  text-align: left;
   border: 1px solid #ddd;
   font-size: 8px;
 }
