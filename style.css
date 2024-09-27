@@ -172,6 +172,7 @@ tr:nth-child(even) {
   background-color: #e0f7e0; /* 明るい緑 */
 }
 
+/* 敗北相手の色を赤に設定 */
 .defeat {
   background-color: #f98fab;
 }
@@ -289,7 +290,7 @@ img {
   }
 
   .gazou {
-    padding-top: 50px;
+    padding-top: 10px;
     width: 360px;
     height: 230px;
     overflow-x: hidden;
