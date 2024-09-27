@@ -134,10 +134,6 @@ p {
 }
 
 
-/* 1列目の横幅を広げる */
-th:first-child, td:first-child {
-  width: 22%; /* 30%に設定（必要に応じて調整） */
-}
 
 /* 1列目の文字を中央に */
 .koumoku {
@@ -170,21 +166,14 @@ th {
 
 td {
   background-color: #fdfdfd;
+  text-align: center;
 }
 
 tr:nth-child(even) {
   background-color: #f9f9f9;
 }
 
-/* 勝利相手の色を緑に設定 */
-.victory {
-  background-color: #e0f7e0; /* 明るい緑 */
-}
 
-/* 敗北相手の色を赤に設定 */
-.defeat {
-  background-color: #f98fab;
-}
 
 /* 来歴の表のスタイル */
 .history {
@@ -197,12 +186,52 @@ tr:nth-child(even) {
   padding: 10px;
 }
 
+.rai {
+  text-align: left;
+}
+
 /* 来歴タイトルのスタイル */
 .history th {
   background-color: #e8f0fe; /* 明るい青色 */
   text-align: center;
   font-size: 1.2em; /* フォントサイズを大きく */
   padding: 10px;
+}
+
+/* 戦績タイトルのスタイル */
+.sennseki  {
+  margin-top: 20px;
+}
+
+.vic {
+  text-align: left;
+}
+
+.def {
+  text-align: left;
+}
+
+.mi {
+  text-align: left;
+}
+
+.hikkenn {
+  font-weight: bold;
+}
+
+
+
+/* 勝利相手の色を緑に設定 */
+.victory {
+  background-color: #e0f7e0; /* 明るい緑 */
+  width: 20%;
+  font-weight: bold;
+}
+
+/* 敗北相手の色を赤に設定 */
+.defeat {
+  background-color: #f98fab;
+  font-weight: bold;
 }
 
 
@@ -266,9 +295,9 @@ table {
 }
 
 th, td {
-  padding: 10px;
-  text-align: left;
-  border: 1px solid #ddd;
+
+  text-align: center;
+
   font-size: 15px;
 }
 
@@ -325,5 +354,10 @@ img {
     
  
   }
+
+  .victory {
+    width: 25%;
+  }
+
 }
 
