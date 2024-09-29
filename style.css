@@ -272,7 +272,7 @@ body {
 
   .gazou {
   
-    padding-top: 100px;
+    padding-top: 10px;
     width: 400px;
     height: 250px;
     overflow-x: hidden;
@@ -358,6 +358,10 @@ img {
   .victory {
     width: 25%;
   }
+
+h3 {
+  font-size: 20px;
+}
 
 }
 
