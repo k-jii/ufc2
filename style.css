@@ -52,6 +52,19 @@ img {
   
 }
 
+/* 点滅 */
+@keyframes wakuten {
+  0% {
+      border: 3px double #fc4a1a;
+  }
+  100% {
+     border: 3px solid #ffffff;
+  }
+}
+.waku-tenmetsu{
+    animation: wakuten 0.5s linear infinite alternate;
+}
+
 h2 {
   text-align: center;
   padding-left: 40px;
