@@ -1,14 +1,21 @@
 body {
   font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
-  font-size: 16px; /* 基本のフォントサイズ */
-  line-height: 1.6; /* 行間を広めに設定 */
-  color: #333; /* 文字色をやや濃いグレーに設定 */
-  background-color: black; /* 背景色を薄いグレーに設定 */
-  margin: 0; /* デフォルトのマージンをリセット */
-  padding: 0; /* デフォルトのパディングをリセット */
+  font-size: 16px;
+  /* 基本のフォントサイズ */
+  line-height: 1.6;
+  /* 行間を広めに設定 */
+  color: #333;
+  /* 文字色をやや濃いグレーに設定 */
+  background-color: black;
+  /* 背景色を薄いグレーに設定 */
+  margin: 0;
+  /* デフォルトのマージンをリセット */
+  padding: 0;
+  /* デフォルトのパディングをリセット */
   overflow-x: hidden;
 }
 
+/* タイトル */
 span {
   background: red;
   padding: 16px;
@@ -20,6 +27,8 @@ h1 {
   padding-bottom: 20px;
 }
 
+
+/* 各階級のリスト */
 .contents {
   margin-top: 40px;
 }
@@ -34,8 +43,10 @@ li {
 
 
 ul {
-  width: 100%; /* 幅を100%に設定 */
-  max-width: 400px; /* 最大幅を設定 */
+  width: 100%;
+  /* 幅を100%に設定 */
+  max-width: 400px;
+  /* 最大幅を設定 */
   margin: 0 auto;
 }
 
@@ -44,89 +55,10 @@ a {
   color: inherit;
 }
 
-img {
-  
-  margin: 0;
-  width: 273px;
-  border: 3px solid white;
-  
-}
 
-/* 点滅 */
-@keyframes wakuten {
-  0% {
-      border: 3px double #fc4a1a;
-  }
-  100% {
-     border: 3px solid #ffffff;
-  }
-}
-.waku-tenmetsu{
-    animation: wakuten 0.5s linear infinite alternate;
-}
-
-h2 {
-  text-align: center;
-  padding-left: 40px;
-  display: none;
-}
-
-h3 {
-  font-size: 32px;
-  text-align: center;
-  color: white;
-}
-
-h4 {
-  font-size: 20px;
-  text-align: center;
-  color: white;
-  font-weight: normal;
-}
-
-.syousai {
-  width: 700px;
-  margin: 0 auto;
-  margin-top: 40px;
-}
-
-
-
-.gazou {
-  display: block;
-  padding-top: 30px;
-  width: 600px;
-  margin: 0 auto ;
-  
-  border: 5px solid #f4e9e9; /* 枠線の太さと色を指定 */
-  border-radius: 10px; /* 角を丸める (必要に応じて) */
-}
-
-
-
-
-p {
-  font-family: 'Open Sans', Arial, sans-serif; /* 読みやすいフォントファミリー */
-  font-size: 16px; /* 基本のフォントサイズ */
-  line-height: 1.6; /* 行間を広めに設定 */
-  letter-spacing: 0.5px; /* 文字間を少し広げる */
-  color: #333; /* 文字色をやや濃いグレーに設定 */
-  margin: 0 0 1.5em; /* 下に適度なマージンを設定 */
-  padding: 0; /* パディングをリセット */
-  margin: 0 auto;
-  display: none;
-}
-
-.bun {
-  color: white;
-  display: block;
-  padding-top: 30px;
-  
-}
-
+/* 選手の一覧画像 */
 .fighter {
   width: 20%;
-  
 }
 
 .fighters {
@@ -134,39 +66,81 @@ p {
   flex-wrap: wrap;
 }
 
-.small {
-  font-size: 25px;
+
+/* 詳細画面での選手の画像 */
+img {
+
+  margin: 0;
+  width: 273px;
+  border: 3px solid white;
+
 }
 
-.small2 {
-  font-size: 21px;
+/* 試合予定が近い選手への点滅 */
+@keyframes wakuten {
+  0% {
+    border: 3px double #fc4a1a;
+  }
+
+  100% {
+    border: 3px solid #ffffff;
+  }
 }
 
-.small3 {
-  font-size: 20px;
+.waku-tenmetsu {
+  animation: wakuten 0.5s linear infinite alternate;
 }
 
 
 
-/* 1列目の文字を中央に */
-.koumoku {
+
+/* 選手の名前 */
+h3 {
+  font-size: 32px;
   text-align: center;
+  color: white;
 }
 
-.syo {
-  text-align: center;
+
+/* 選手のデータ */
+.syousai {
+  width: 700px;
+  margin: 0 auto;
+  margin-top: 40px;
 }
 
+
+.gazou {
+  display: block;
+  padding-top: 30px;
+  width: 600px;
+  margin: 0 auto;
+
+  border: 5px solid #f4e9e9;
+  /* 枠線の太さと色を指定 */
+  border-radius: 10px;
+  /* 角を丸める (必要に応じて) */
+}
+
+
+
+
+
+
+/* 表のスタイル */
 table {
   width: 100%;
   border-collapse: collapse;
 }
 
-table, th, td {
+table,
+th,
+td {
   border: 1px solid #ddd;
 }
 
-th, td {
+th,
+td {
   padding: 15px;
   text-align: left;
   font-size: 20px;
@@ -186,9 +160,6 @@ tr:nth-child(even) {
   background-color: #f9f9f9;
 }
 
-
-
-/* 来歴の表のスタイル */
 .history {
   margin-top: 20px;
   border: 1px solid #ddd;
@@ -203,16 +174,18 @@ tr:nth-child(even) {
   text-align: left;
 }
 
-/* 来歴タイトルのスタイル */
 .history th {
-  background-color: #e8f0fe; /* 明るい青色 */
+  background-color: #e8f0fe;
+  /* 明るい青色 */
   text-align: center;
-  font-size: 1.2em; /* フォントサイズを大きく */
+  font-size: 1.2em;
+  /* フォントサイズを大きく */
   padding: 10px;
 }
 
+
 /* 戦績タイトルのスタイル */
-.sennseki  {
+.sennseki {
   margin-top: 20px;
 }
 
@@ -236,7 +209,8 @@ tr:nth-child(even) {
 
 /* 勝利相手の色を緑に設定 */
 .victory {
-  background-color: #e0f7e0; /* 明るい緑 */
+  background-color: #e0f7e0;
+  /* 明るい緑 */
   width: 20%;
   font-weight: bold;
 }
@@ -249,24 +223,66 @@ tr:nth-child(even) {
 
 
 
-@media screen and (max-width: 1200px) {
-  /* 1200px以下で表示させたいcssを記述していく */
-body {
-  overflow-x: hidden;
-  margin: 0;
+/* メモに使用している項目。消去予定 */
+h2 {
+  text-align: center;
+  padding-left: 40px;
+  display: none;
 }
+
+h4 {
+  font-size: 28px;
+  text-align: center;
+  color: white;
+}
+
+p {
+  font-family: 'Open Sans', Arial, sans-serif;
+  /* 読みやすいフォントファミリー */
+  font-size: 16px;
+  /* 基本のフォントサイズ */
+  line-height: 1.6;
+  /* 行間を広めに設定 */
+  letter-spacing: 0.5px;
+  /* 文字間を少し広げる */
+  color: #333;
+  /* 文字色をやや濃いグレーに設定 */
+  margin: 0 0 1.5em;
+  /* 下に適度なマージンを設定 */
+  padding: 0;
+  /* パディングをリセット */
+  margin: 0 auto;
+  display: none;
+}
+
+.bun {
+  color: white;
+  display: block;
+  padding-top: 30px;
+
+}
+
+
+
+@media screen and (max-width: 1200px) {
+
+  /* 1200px以下で表示させたいcssを記述していく */
+  body {
+    overflow-x: hidden;
+    margin: 0;
+  }
 
   .fighter {
     width: 25%;
     overflow-x: hidden;
-    padding-left: 0; 
+    padding-left: 0;
     margin-left: 0;
   }
 
   .fighters {
-    display: flex;none
-    flex-wrap: wrap;none
-    overflow-x: hidden;
+    display: flex;
+    none flex-wrap: wrap;
+    none overflow-x: hidden;
   }
 
   img {
@@ -284,35 +300,36 @@ body {
   }
 
   .gazou {
-  
+
     padding-top: 10px;
     width: 400px;
     height: 250px;
     overflow-x: hidden;
- 
+
   }
-  
-  
+
+
 }
 
 @media screen and (max-width: 520px) {
   /* 520px以下で表示させたいcssを記述していく */
 
 
-table {
-  width: 100%;
-  margin: 0 auto;
-  border-collapse: collapse;
-  background-color: #fff;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
+  table {
+    width: 100%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
 
-th, td {
+  th,
+  td {
 
-  text-align: center;
+    text-align: center;
 
-  font-size: 15px;
-}
+    font-size: 15px;
+  }
 
   .fighter {
     width: 33%;
@@ -329,12 +346,12 @@ th, td {
   }
 
 
-img {
-  width: 125px;
-  height: 78px;
-  border: 1px solid white;
- 
-}
+  img {
+    width: 125px;
+    height: 78px;
+    border: 1px solid white;
+
+  }
 
 
   li {
@@ -345,7 +362,7 @@ img {
   .raito {
     font-size: 28px;
   }
-  
+
 
   ul {
     width: 320px;
@@ -364,17 +381,16 @@ img {
     width: 360px;
     height: 230px;
     overflow-x: hidden;
-    
- 
+
+
   }
 
   .victory {
     width: 25%;
   }
 
-h3 {
-  font-size: 20px;
-}
+  h3 {
+    font-size: 20px;
+  }
 
 }
-
