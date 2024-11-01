@@ -281,7 +281,7 @@ p {
 
   .fighters {
     display: flex;
-    none flex-wrap: wrap;
+    none flex-wrap: wrap; 
     none overflow-x: hidden;
   }
 
